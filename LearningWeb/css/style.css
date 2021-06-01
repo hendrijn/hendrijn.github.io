@@ -128,7 +128,7 @@ footer {
   display: inline-block;
 }
 
-/* Media Queries */
+/* Media Queries - make the website responsive for different screens*/
 @media screen and (min-width: 750px) {
   header,
   footer {
