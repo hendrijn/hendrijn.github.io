@@ -1,0 +1,86 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+
+#main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.nav > a {
+    text-decoration: none;
+    color: purple;
+    margin: 10px;
+    padding-bottom:2px;
+    background-image: linear-gradient(#000, #000);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.nav > a:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
+
+figure {
+    margin-top: 50px;
+    padding: 0 30px;
+    border: solid 3px purple;
+    border-width: 0 3px;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+heading {
+    text-align: center;
+}
+
+heading > p {
+    margin: 10px;
+}
+
+#design-q {
+    font-weight: bold;
+    width: 120%;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: purple; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(128, 0, 128, 0.783); /* Add a dark-grey background on hover */
+  }

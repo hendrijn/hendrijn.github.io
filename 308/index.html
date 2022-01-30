@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>SMAD BookedScheduler Redesign</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#intro">The Big Problem</a>
+        <a href="#user-goals">User Goals</a>
+        <a href="#app-analysis">App Analysis</a>
+        <a href="#research">User Research</a>
+        <a href="#prob">Defining The Problem</a>
+        <a href="#redesign">The Redesign</a>
+        <a href="#reflect">Reflections</a>
+    </nav>
+
+    <div id="main">
+        <heading>
+            <h1>SMAD BookedScheduler Website Redesign</h1>
+            <p>Jacquelyn Hendricks</p>
+            <p>SMAD 308</p>
+        </heading>
+
+
+
+        <div id="intro">
+            <h2>The Big Problem</h2>
+            <p>
+                The Media Arts and Design program at JMU is known for its hands-on learning. Many students need access
+                to
+                recording equipment for their classes. SMAD provides a website to reserve equipment from the checkout
+                room,
+                perfect for completing required assignments. But is this too good to be true?
+            </p>
+
+            <p>
+                I am one of these students who has had to reserve cameras, lights, and mics, from this website. And it's
+                not
+                simple. Many of my classmates have also expressed concerns over using the site. From its confusing
+                layout,
+                hidden features, vague wording, and unuseful homepage, there's lots to be changed here. I decided to
+                focus
+                just on the issue of adding equipment to a reservation, because it's a highly necessary functionality
+                for
+                students.
+            </p>
+
+            <p>
+                For this process, I started by analyzing SMAD BookedScheduler and making an hypothesis about
+                the
+                main issues based on my experiences. Then I formulated a survey polling respondents on their
+                history
+                using the app, which guided my final design question. Then I began structuring my solution to that
+                question
+                by considering information architecture, layout schemes, user goals, and design sophistication.
+                Finally, I created mockups for my proposed solution to encapsulate all the research done on the issue.
+            </p>
+        </div>
+
+        <div id="user-goals">
+            <h2>User Goals</h2>
+            <p>
+                The primary users of SMAD BookedScheduler are students trying to reserve video equipment to use on
+                projects.
+                While most students I have seen use the site on computers, it is common to use it on a mobile site too.
+                I
+                will be focusing on the desktop version for this redesign.
+            </p>
+
+            <p>The primary goals of SMAD BookedScheduler are:</p>
+            <ul>
+                <li>Create a reservation</li>
+                <li>Add equipment to a reservation</li>
+                <li>See when equipment is available</li>
+                <li>View your reservations</li>
+            </ul>
+        </div>
+
+        <div id="app-analysis">
+            <h2>App Analysis</h2>
+
+            <figure>
+                <img src="/images/curr-homepage.png" alt="Current Homepage">
+                <figcaption>Current Homepage for SMAD BookedScheduler</figcaption>
+            </figure>
+
+            <p>
+                Starting at the homepage, most of the content is irrelevant and unused by the checkout room.
+                Announcements are never posted and upcoming reservations aren't a high priority feature.
+                Unless
+                you have a reservation already set, nothing appears here, so it's just a blank box. If we follow the
+                principles of visual hierarchy and information architecture, the first items on the homepage
+                aren't even useful when comparing them to the goals of the app.
+            </p>
+
+            <p>
+                The Resource Availability section is only half useful. It adds items based on what you've ordered in the
+                past
+                and allows you to add favorite items that will appear at the top. They're on the right track with this
+                but
+                reading the availability of the item is difficult. Also, you can't reserve multiple items from the list
+                at
+                once without going into the default reservation screen. Therefore, even though this section of the
+                homepage
+                meets the creating a reservation requirement, it fails on several others.
+            </p>
+
+            <figure>
+                <img src="/images/reserve-tab.png" alt="Reservations Tab">
+                <figcaption>Current Reservations Tab</figcaption>
+            </figure>
+
+            <p>
+                Next I looked at the reservations tab on the nav bar. Here I found a lot of options that were very
+                similar.
+                The most important tab is "Schedule" which conveniently is located at the top. All the other tabs,
+                however,
+                took me to confusing pages with lots of input fields or calendars that didn't relate much to the
+                goals.
+                It seems like the site has a bunch of unnecessary features, yet hides the main scheduler which is
+                the
+                most common function.
+            </p>
+
+            <figure>
+                <img src="/images/schedule-screen.png" alt="Scheduling Calendar">
+                <figcaption>Current Scheduling Calendar</figcaption>
+            </figure>
+
+            <p>
+                If you are able to find the scheduling calendar, you can see all the equipment and when it's available.
+                At
+                first glance, my eye was drawn to the color coding key. I know from experience that many of these colors
+                aren't used by the checkout room workers so it seems like clutter. You can see the date in the top right
+                corner and there's helpful arrow keys to move around. All the equipment is on the left of the calendar
+                with
+                dates on the top. It's easy to see when items are available, unlike trying to reserve them on the
+                homepage.
+            </p>
+
+            <figure>
+                <img src="/images/reserve-screen.png" alt="Reservation Screen">
+                <figcaption>Current Reservation Screen</figcaption>
+            </figure>
+
+            <p>
+                When you click on an open time slot you're taken to the main reservation screen--same as if you clicked
+                reserve on the home page. The input fields are easy to see and understand, though the need for a
+                description is questionable given most users are students using it for class. If you wanted to add more
+                equipment to the reservation, there's a plus sign but it's next to "Change" which should be named to
+                represent the addition of items. "Change" makes it seem like the user is editing the one item they
+                selected, not adding more. The submit or "create" button is in the top right corner, which I believe to
+                be against common UX form submissions where it's located at the bottom.
+            </p>
+
+        </div>
+
+        <div id="research">
+            <h2>User Research</h2>
+            <h3>Survey</h3>
+            <p>
+                To ensure my predictions are realistic I sent a Google Survey to my peers in various SMAD group chats. I
+                knew this demographic of people had a mix of SMAD concentrators that may or may not have used the site
+                before. I asked a variety of questions aimed at determining if they had experienced issues with SMAD
+                BookedScheduler.
+            </p>
+
+            <p>
+                From my survey 80% of the 10 respondents said they had used the website to rent equipment. Not
+                surprising was
+                <em>87%</em> of those users had experienced difficulty with making a reservation.
+            </p>
+
+            <figure>
+                <img src="/images/web-difficulties.png" alt="graph of why respondents had issues with the site">
+            </figure>
+
+            <p>
+                This chart shows a breakdown of various reasons why the respondents had issues using the site. Most
+                commonly, they couldn't find where to make the reservation or where to add multiple items. One of the
+                respondents said "Trying to figure out what is available for reservation is frustrating" and another
+                said "It’s just not very user friendly".
+            </p>
+
+            <figure>
+                <img src="/images/many-equip.png"
+                    alt="graph of how many struggled with adding multiple pieces of equipment">
+            </figure>
+
+            <p>
+                I wanted to know how difficult adding many things to their reservation was. Again, the
+                results were consistent with my assumptions. 75% of respondents agreed that they struggled with how to
+                do this. One even admitted "I used to go in and reserve each piece of equipment separately until someone
+                showed me that I could put them all under one reservation".
+            </p>
+
+            <h3>Usability Interview</h3>
+
+            <p>
+                I also interviewed a few peers in the Computer Science department. With no prior experience on the app,
+                I wanted to watch them make a reservation for a camera and add a shotgun mic. Both of them saw the list
+                of things on the homepage and used the list selector to find the camera. Parth was confused when he
+                selected it because it added to the list of resources, but didn't start a reservation. Both of them then
+                clicked the "Reserve" button which took them to the reservation screen. Carter didn't know what to put
+                for the title field but found the plus icon fine. Both struggled with what to put in the description
+                field.
+            </p>
+
+            <p>
+                They were able to make a reservation, but they didn't check to see if something was even available. I
+                asked them if they would have went to the reservation tab to find the schedule button and calendar view.
+                Carter said "I saw reserve on the homepage next to equipment and assumed that was where to go". Parth
+                admitted "I didn’t know about the calendar as a first time user, I just used the search bar on the home
+                page".
+            </p>
+
+            <p>
+                From this experiment, it is clear the homepage doesn't provide good guides to indicate the very useful
+                scheduling calendar even exists. I also found it interesting they didn't seem to care if something was
+                available or not. This could lead to serious issues as classes pick up throughout the semester.
+            </p>
+        </div>
+
+        <div id="prob">
+            <h2>Defining The Problem</h2>
+            <p>
+                SMAD BookedScheduler is trying to accomplish too much for its user base. Students are looking to
+                quickly make multi-equipment reservations and are met with confusion over where to do this. Hardly
+                anyone uses the advanced features under the reservations tab and the homepage includes irrelevant
+                information.
+            </p>
+
+            <p>From my analysis and user research, the pain points I identified are:</p>
+            <ol>
+                <li>A non-useful homepage that doesn't display relevant information.</li>
+                <li>Unclear indication on where to make a reservation.</li>
+                <li>Poor emphasis on where to add equipment to a reservation.</li>
+            </ol>
+            <p>
+                Leading to the main design question:
+            </p>
+
+            <p id="design-q">How can we improve the experience of students making multi-piece reservations in SMAD
+                BookedScheduler?</p>
+        </div>
+
+        <div id="redesign">
+            <h2>The Redesign</h2>
+            <h3>Information Architecture</h3>
+            <p>
+                So that I could visualize the way SMAD BookedScheduler is set up currently, I created a diagram showing
+                the functionalities and where they're grouped on the site.
+            </p>
+
+            <figure>
+                <img src="/images/ia-graph.png" alt="Information Architecture of tabs and their contents">
+            </figure>
+
+            <p>
+                Since I'm focused on editing the reservation user flow, I mainly changed the homepage and
+                reservations tab. I decided to remove the "Announcements" and "Upcoming Reservations" tab and add a
+                section
+                for making a reservation. I changed the "Reservations" tab to remove unnecessary features and clarify
+                where to make a reservation.
+            </p>
+
+            <figure>
+                <img src="/images/new-ia-graph.png" alt="Revised Information Architecture of tabs and their contents">
+            </figure>
+
+            <p>
+                Here, the two "Make a Reservation" areas will link to the same schedule calendar. That way, the
+                interface will be the same for all users trying to reserve something. I think the schedule calendar is
+                the easiest and most convenient way to see what equipment exists, when it's free, and how to reserve it.
+            </p>
+
+            <p>
+                It's now easier for the user to identify the functionality of each tab in "Reservations". Users have one
+                place to go and look up information for current and past reservations. For example, "Printing a
+                Reservation" is something very few people do, so instead of putting it in the main submenu, it now
+                belongs inside the "My Reservations" tab.
+            </p>
+
+            <h3>Main User Flow</h3>
+
+            <p>
+                I formulated two different flows users can take to reserve equipment: clicking "Make a Reservation" from
+                the home screen or clicking the tab for it under "Reservations". The diagram will be the same from this
+                point forward since we are now using the same scheduling calendar.
+            </p>
+
+            <figure>
+                <img src="/images/user-flow.png" alt="User flow for updated interface">
+            </figure>
+
+            <p>
+                A few things to note about the diagram:
+            </p>
+
+            <ul>
+                <li>Users can now click and drag to select a time from the calendar instead of just clicking the
+                    starting time</li>
+                <li>The reservation form will have a place to add frequently used items</li>
+                <li>Users can now select multiple items from the equipment list at once where before you could only
+                    select one</li>
+            </ul>
+
+            <h3>Mockups</h3>
+
+            <p>
+                Taking all the research into consideration, I created new designs for the homepage, reservations tab,
+                and reservation screen.
+            </p>
+
+            <figure>
+                <img src="/images/new-homepage.jpg" alt="Redesigned Homepage">
+                <figcaption>Redesigned Homepage</figcaption>
+            </figure>
+
+            <p>
+                This new design removes features like "Announcements" and "Reservation Schedule" that were unused and
+                poorly placed in the visual architecture. It simplifies what the user is looking at and draws emphasis
+                to the
+                main user goal: making a reservation. I kept the resource availability tab because it still could be
+                useful, but also because my main user flow is being accomplished through other revisions.
+            </p>
+
+            <figure>
+                <img src="/images/new-reserve-tab.png" alt="Redesigned Reservation Tab">
+                <figcaption>Redesigned Reservation Screen</figcaption>
+            </figure>
+
+            <p>
+                The new reservations tab removes the plethora of extra features to leave only the most important
+                features. I also revised the wording to better mimic what a user would expect. For example, I changed
+                "Schedule" to "Make a Reservation" since that is more clear. All the extra functions related to past
+                reservations would now be found under the "My Reservations" tab. This, again, reduces clutter and
+                makes the tab contents easier to read.
+            </p>
+
+            <p>
+                Now a new user has two clear points of contact to make a
+                reservation which should help reduce the confusion found from the user research.
+            </p>
+
+            <figure>
+                <img src="/images/new-reserve-screen.jpg" alt="Redesigned Reservation Screen">
+                <figcaption>Redesigned Reservation Screen</figcaption>
+            </figure>
+
+            <p>
+                I kept the schedule calendar the same and moved onto the reservation screen. My two main goals were
+                limiting unnecessary fields and clarifying where to reserve multiple items. From my user research I
+                found many didn't use the description field and found the title field to be
+                extra work. The only input field that exists now is the "Class and Project" field, arguably the most
+                important information needed for the equipment room. I reduced the clutter surrounding the time section
+                to just keep the most important requirements: a start and end time.
+            </p>
+
+            <p>
+                To tackle the equipment pain point I added an "Add Equipment" button that would take the user to an
+                overall list to see what equipment is available. Anything free to reserve during the specified time
+                would be at the top of the list. Any items not free would be greyed out at the bottom. I also included a
+                easy way to add equipment that's
+                frequently reserved. This would take prior reservations and remember which items are used most. To
+                handle scheduling conflicts, the new BookedScheduler would only remember the general item, like Shotgun
+                Kit, and find whichever specific item, like Shotgun Kit A, is free at the same time. If it cannot find
+                an item for the same time, it won't add it to the list on the left and will present a popup explaining
+                that
+                item isn't available at the given time.
+            </p>
+
+            <p>
+                I also relocated the submit button to the bottom of the form, complying with most UX standards. I
+                changed the text from "Submit" to "Make Reservation" to relate it back to the desired action from
+                the user of making the reservation. While a subtle change, I think it reinforces the clarity and
+                consistency across the platform.
+            </p>
+        </div>
+
+        <div id="reflect">
+            <h2>Reflections</h2>
+            <p>
+                These changes will make SMAD BookedScheduler's usability far superior to its current version. The site
+                is essential for SMAD students working on
+                projects, therefore, the demand for a usable and simple site is high. The designs proposed in this
+                redesign satisfy many pain points identified and improve student experience.
+            </p>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
