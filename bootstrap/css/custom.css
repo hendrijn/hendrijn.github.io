@@ -1,4 +1,19 @@
 @charset "UTF-8";
+
 /* Add your custom CSS declarations below  */
+.nav-link,
+h2 {
+    font-family: Futura;
+}
 
+h2 {
+    font-size: 1.4em;
+}
 
+#index-info {
+    margin: 30px;
+}
+
+.justify {
+    text-align: justify;
+}
