@@ -17,3 +17,47 @@ h2 {
 .justify {
     text-align: justify;
 }
+
+#entry {
+    margin: 40px 0;
+}
+
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+#yorkie-header {
+    background-image: url(../images/yorkie-car.jpeg);
+    background-position: 50% 60%;
+}
+
+#cavapoo-header {
+    background-image: url(../images/cava-car.jpeg);
+    background-position: 50% 50%;
+}
+
+#corgie-header {
+    background-image: url(../images/corgie-car.jpeg);
+    background-position: 50% 60%;
+}
+
+#header-title {
+    color: white;
+    margin: 0 auto;
+    align-self: center;
+
+    font-size: 10em;
+    font-family: 'Ms Madi', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 300px;
+    }
+
+    #header-title {
+        font-size: 8em;
+    }
+}
