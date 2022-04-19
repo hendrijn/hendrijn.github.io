@@ -1,13 +1,40 @@
 @charset "UTF-8";
 
 /* Add your custom CSS declarations below  */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 .nav-link,
 h2 {
-    font-family: Futura;
+    font-family: 'Ubuntu', 'Ariel';
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: blue;
+    padding-bottom: 10px;
+    border-bottom: 3px solid blue;
 }
 
 h2 {
     font-size: 1.4em;
+}
+
+h4 {
+    color: blue;
+    font-family: 'Ubuntu', 'Ariel';
+}
+
+footer {
+    align-items: center;
+    justify-items: center;
+}
+
+.foot-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .55);
+    font-family: 'Ubuntu', 'Ariel';
 }
 
 #index-info {
@@ -40,7 +67,7 @@ h2 {
 
 #corgie-header {
     background-image: url(../images/corgie-car.jpeg);
-    background-position: 50% 60%;
+    background-position: 50% 40%;
 }
 
 #header-title {
@@ -50,6 +77,22 @@ h2 {
 
     font-size: 10em;
     font-family: 'Ms Madi', cursive;
+}
+
+/* Cards */
+
+.cards {
+    margin: 40px 0;
+}
+
+.card {
+    background: none;
+    border: none;
+}
+
+.rounded-circle {
+    /* width: 348px;
+    height: 435px; */
 }
 
 @media only screen and (max-width: 600px) {
