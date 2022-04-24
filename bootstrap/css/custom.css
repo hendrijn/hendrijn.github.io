@@ -49,6 +49,10 @@ footer {
     font-family: 'Ubuntu', 'Ariel';
 }
 
+#foot-img {
+    width: 85px;
+}
+
 #index-info {
     margin: 30px;
 }
@@ -103,8 +107,8 @@ footer {
 }
 
 .rounded-circle {
-    /* width: 348px;
-    height: 435px; */
+    width: 348px;
+    height: 435px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -123,5 +127,9 @@ footer {
 
     #foot-img {
         width: 20px;
+    }
+
+    footer>.col {
+        font-size: x-small;
     }
 }
