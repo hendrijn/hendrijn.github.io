@@ -26,7 +26,9 @@ body {
 }
 
 .s2 {
-  background-color: #A8DADC;
+  background: url(/images/home-2.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .s3 {
@@ -50,7 +52,7 @@ body {
 }
 
 .placeholder {
-  height: 200px;
+  height: 150px;
   background: rgba(0, 0, 0, 0)
 }
 
@@ -74,6 +76,27 @@ a {
   margin: 20px 0;
 }
 
+.btn-primary {
+  background-color: #457b9dff;
+}
+
+.btn-primary:hover {
+  background-color: #1D3557;
+
+}
+
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.list-head {
+  color: #ef8275ff;
+  font-family: 'Pangolin', serif;
+  border-bottom: #457B9D solid 3px;
+  border-radius: 7px;
+}
+
 @media screen and (max-width: 950px) {
   .navbar-light .navbar-brand {
     width: 50%;
@@ -92,5 +115,13 @@ a {
     background-color: aliceblue;
     padding: 10px;
 
+  }
+
+  .home-2 {
+    margin-top: 30px;
+  }
+
+  .list-head {
+    font-size: 20px;
   }
 }
