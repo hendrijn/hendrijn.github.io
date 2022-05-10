@@ -7,6 +7,7 @@
 
 body {
   color: #1D3557;
+  font-family: 'Lato', sans-serif;
 }
 
 .navbar-light .navbar-brand {
@@ -44,6 +45,10 @@ body {
   margin-right: 30px;
 }
 
+.navbar-expand-lg .navbar-collapse {
+  margin-right: 0;
+}
+
 .placeholder {
   height: 200px;
   background: rgba(0, 0, 0, 0)
@@ -52,6 +57,8 @@ body {
 .opening {
   margin-top: 100px;
   margin-bottom: 0;
+  font-family: 'Pangolin', serif;
+
 }
 
 a {
@@ -73,6 +80,17 @@ a {
   }
 
   .placeholder {
-    height: 100px;
+    height: 30px;
+  }
+
+  #fp-nav.fp-right {
+    display: none;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    z-index: 9;
+    background-color: aliceblue;
+    padding: 10px;
+
   }
 }
