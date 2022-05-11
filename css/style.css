@@ -32,7 +32,9 @@ body {
 }
 
 .s3 {
-  background-color: #457B9D;
+  background: url(/images/home-3.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
@@ -60,7 +62,7 @@ body {
   margin-top: 100px;
   margin-bottom: 0;
   font-family: 'Pangolin', serif;
-
+  font-size: 2.8em;
 }
 
 a {
@@ -74,6 +76,7 @@ a {
 
 .main-sub {
   margin: 20px 0;
+  font-size: 1.2em;
 }
 
 .btn-primary {
@@ -97,9 +100,14 @@ a {
   border-radius: 7px;
 }
 
+.fp-warning,
+.fp-watermark {
+  position: relative;
+}
+
 /* Web Projects */
 .web-nav {
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
 
 #btn-back-to-top {
@@ -123,6 +131,11 @@ a {
   color: #1D3557;
 }
 
+.card-title {
+  font-family: 'Pangolin', serif;
+  color: #ef8275ff
+}
+
 .card-text {
   margin-bottom: 16px;
 }
@@ -134,6 +147,10 @@ a {
 
   .placeholder {
     height: 30px;
+  }
+
+  .place-3 {
+    height: 85px;
   }
 
   #fp-nav.fp-right {
