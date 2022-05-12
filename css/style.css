@@ -10,6 +10,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.navbar-nav {
+  margin-right: 40px;
+}
+
 .navbar-light .navbar-brand {
   width: 30%;
 }
@@ -51,7 +55,7 @@ body {
 }
 
 .navbar-light .navbar-toggler {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -145,7 +149,9 @@ a {
   margin-bottom: 16px;
 }
 
+/* Media Query */
 @media screen and (max-width: 950px) {
+
   .navbar-light .navbar-brand {
     width: 50%;
   }
