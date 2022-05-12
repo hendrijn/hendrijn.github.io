@@ -186,8 +186,13 @@ a {
     display: block;
   }
 
-  iframe {
+  .pdf {
     display: none;
+  }
+
+  .video {
+    width: 350px;
+    height: 200px;
   }
 }
 
