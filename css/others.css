@@ -1,0 +1,22 @@
+.report-sub {
+    font-size: 25px;
+    color: #457b9dff;
+}
+
+.report-heading {
+    font-family: 'Pangolin', serif;
+    color: #ef8275ff;
+    padding-bottom: 7px;
+    border-bottom: 2px black solid;
+}
+
+.btn-outline-primary {
+    border-color: #457b9dff;
+    color: #457b9dff;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1d3557ff;
+}

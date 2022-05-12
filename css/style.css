@@ -45,6 +45,11 @@ body {
   border-radius: 5px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  padding-bottom: 10px;
+
+}
+
 .navbar-light .navbar-toggler {
   margin-right: 30px;
 }
@@ -176,4 +181,17 @@ a {
   .list-head {
     font-size: 20px;
   }
+
+  .pdf-link {
+    display: block;
+  }
+
+  iframe {
+    display: none;
+  }
+}
+
+/* User-Report */
+.pdf-link {
+  display: hidden;
 }

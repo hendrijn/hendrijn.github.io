@@ -8,6 +8,9 @@
 
     <link rel="icon" href="/images/small-light.png">
 
+    <!-- Social icons -->
+    <script src="https://kit.fontawesome.com/9292898f9d.js" crossorigin="anonymous"></script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,11 +32,17 @@
 
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/features.css">
+    <link rel="stylesheet" href="/css/others.css">
 
     <title>Jacquelyn Hendricks</title>
 </head>
 
 <body>
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
     <nav class="navbar navbar-expand-lg navbar-light web-nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img class="img-fluid logo" src="/images/1.png"
@@ -45,24 +54,97 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="web.html">Web Projects</a>
+                        <a class="nav-link" href="/web.html">Web Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="other.html">Other Projects</a>
+                        <a class="nav-link" href="/other.html">Other Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="timeline.html">My Timeline</a>
+                        <a class="nav-link" href="/timeline.html">My Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Me</a>
+                        <a class="nav-link" href="/contact.html">Contact Me</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <a href="/other.html"><button type="button" class="btn btn-outline-primary">&larr; Back to
+                Other Projects</button></a>
+        <h1 class="text-center report-heading">Foodie Finder App</h1>
+        <div class="row mt-4">
+            <h2 class="text-center report-sub">User Research Report</h2>
+            <div class="col-md-6">
+                <p>For my 203 User Experience Design class I did a long project centered around a new app idea. I chose
+                    to make an app centered around dining in the Harrisonburg, VA area. I acted as a UX designer in
+                    creating a problem statement, conducting research to verify the problem, and created specifications
+                    for the end app. This PDF documents this process.</p>
+            </div>
+            <div class="col-md-6">
+                <p>This document includes:</p>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <p>Design Questions</p>
+                        </div>
+                        <div class="col-4">
+                            <p>Interview Summary</p>
+                        </div>
+                        <div class="col-4">
+                            <p>Personas</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <p>Solution Hypothesis</p>
+                        </div>
+                        <div class="col-4">
+                            <p>Design Requirements</p>
+                        </div>
+                        <div class="col-4">
+                            <p>Design Inspiration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <iframe src="/images/User Research Report.pdf" loading="eager" width="100%" height="500px">
+        </iframe>
+        <p class="pdf-link mb-6"> To see the PDF through Dropbox, <a
+                href="https://www.dropbox.com/s/5jrcv29488js2wa/User%20Research%20Report.pdf?dl=0" target="_blank"
+                rel="noopener noreferrer">click here!</a></p>
+
+        <div class="row">
+            <h2 class="text-center report-sub my-2">Design Mockups</h2>
+            <p>I also had to design mockups for the design of the app. I created designs for the loading screen,
+                homepage, and what it's like to search for a restaurant. Also, at the end of the semester we had to
+                create a WordPress website to combine the User Research Report and our mockups. Unfortunately I only
+                have an image of the "above the fold" for the site.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <video class="img-fluid my-3" src="/images/Load_Screen.mp4" autoplay controls></video>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="/images/foodie-home.png" class="w-100 my-3" alt="Home Page of Foodie Finder" />
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="/images/Restaurant_1.png" class="w-100 my-3" alt="Top Half of a Restaurant Search" />
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="/images/Restaurant_2.png" class="w-100 my-3" alt="Bottom Half of a Restaurant Search" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Back to top button from https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#html-tab-view -->
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
