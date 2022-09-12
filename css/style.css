@@ -24,19 +24,19 @@ body {
 }
 
 .s1 {
-  background: url(/images/site-home.png);
+  background: url(/images/compressed/site-home-min.png);
   background-size: cover;
   background-position: center;
 }
 
 .s2 {
-  background: url(/images/home-2.png);
+  background: url(/images/compressed/home-2-min.png);
   background-size: cover;
   background-position: center;
 }
 
 .s3 {
-  background: url(/images/home-3.png);
+  background: url(/images/compressed/home-3-min.png);
   background-size: cover;
   background-position: center;
 }
