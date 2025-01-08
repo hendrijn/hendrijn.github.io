@@ -88,6 +88,21 @@ a {
   margin: 10px 20px;
 }
 
+.langs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .main-sub {
+    margin: 0;
+
+    &:first-of-type {
+      max-width: 600px;
+    }
+  }
+}
+
 .main-sub {
   margin: 20px 0;
   font-size: 1.2em;
@@ -119,7 +134,7 @@ a {
   position: relative;
 }
 
-.list-group{
+.list-group {
   align-items: center;
 }
 
